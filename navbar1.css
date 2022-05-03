@@ -1,0 +1,75 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: 
+  #2c3e50;
+}
+nav{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #34495e;
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+  display: flexbox;
+  align-items: flex-end;
+}
+nav a{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  text-align: center;
+}
+nav .animation{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background: #1abc9c;
+  border-radius: 8px;
+  transition: all 0.5s ease 0s;
+}
+a:nth-child(1){
+  width: 100px;
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+  width: 100px;
+  left: 0px;
+}
+a:nth-child(2){
+  width: 100px;
+}
+nav.start-home,a:nth-child(2):hover~.animation{
+  width: 100px;
+  left: 100px;
+}
+a:nth-child(3){
+  width: 100px;
+}
+nav.start-home,a:nth-child(3):hover~.animation{
+  width: 100px;
+  left: 200px;
+}
+a:nth-child(4){
+  width: 100px;
+}
+nav.start-home,a:nth-child(4):hover~.animation{
+  width: 100px;
+  left: 300px;
+}
+a:nth-child(5){
+  width: 100px;
+}
+nav.start-home,a:nth-child(5):hover~.animation{
+  width: 100px;
+  left: 400px;
+}
+
+.Nav__bar{
+  height: 200px;
+}

@@ -1,0 +1,74 @@
+/* font-awesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+  font-style: normal;
+  float: right;
+}
+
+/* Style */
+
+body {
+  background-color: #f78a78;
+  font-size: 14px;
+}
+
+.list-wrap {
+  width: 200px;
+  margin: 100px auto;
+  background-color: #fff;
+  
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);  
+  position: relative;
+}
+
+.list-wrap a {
+  display: block;
+  color: #999;
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.is-visible{
+  display: none;
+}
+
+.dropdown:before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  border-top: 0;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+}
+
+.dropdown a:hover {
+  background-color: #f78a78;
+  color: #fff;
+  opacity: .7;
+}

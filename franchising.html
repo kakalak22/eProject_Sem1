@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 3</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style5.css">
+        <link rel="stylesheet" href="slidercard.css">
+        <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="a.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://use.fontawesome.com/f55e33691d.js"></script>
+    </head>
+    <body>
+      <div class="wrapper">
+        <nav  id="section_1">
+          <ul class="menu">
+            <a href="index5.html"><img src="../eProject/images/logo8.png" width="170px" alt="" class="logo"></a>
+            <li ><a  href="index5.html">Home</a></li>
+            <li><a href="product.html" >Product</a></li>
+            <li><a href="franchising.html" class="active-content" >Franchising</a></li>
+            <li><a href="catering.html" >Catering</a></li>
+            <li><a href="feedback.html" >Feedback</a></li>
+            <li><a href="Aboutus.html" >About Us</a></li>
+            <li><a href="contactus.html" >Contact Us</a></li>
+          </ul>
+        </nav>
+          <!-- Page Content Holder -->
+        <div id="content" style="padding: 10px;">
+        <div class="row">
+          <div class="col-sm-7">
+            <img width="100%" height="400px" src="../eProject/images/Start-business.jpg" alt="">
+          </div>
+          <div class="col-sm-5">
+            <h2 class="header">START YOUR OWN BUSSINES</h2>
+            <p class="info">For more than 58 years, the Shrek-Juices brand has provided every franchisee with innovation, achievements and a proven business model.
+            With various franchise opportunities available, we can ensure we will help you make the right decisions, so you can hit the ground running and grow your business, quickly and easily. And your options are limitless. As we continue to grow the Sherk-Juices brand, we remain competitive by offering franchising opportunities through multi-unit acquisitions and new restaurant development.
+            We have the recipe for success and are determined to empower you with first-class knowledge resources and support needed to be a member of the Burger King family. There has never been a better time to become a Shrek-Juices franchisee. We stand ready to support your franchising & development plans. Are you ready to act?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ScrollDown">
+
+            <div class="ScrollDown_box">
+              <a class="btn_ScrollDown" href="#section_2">
+                <span></span><span></span><span></span>Scroll Down</a>
+            </div>
+          
+          </div>
+        </div>
+        <br>
+          <div class="row" id="section_2">
+            <div class="col-sm-5">
+              <h2 class="header">QUALIFICATIONS</h2>
+              <p class="info">The Shrek-Juices brand is continuously looking for multi-unit operators with partners who have extensive restaurant experience and are committed to providing an excellent guest experience.
+              The Shrek-Juices new franchisee approval process includes:
+              Completion of the Franchise Application to understand professional background and personal finances
+              Verification of net worth and liquid assets through a CPA opinion letter
+              Submission of Business Plan outlining proposed organization structure, operations plan, marketing plan and growth and acquisition plan
+              Please note that these qualifications apply to franchisees applying for the continental US market. Qualifications may change based on your country of application.</p>
+            </div>
+              <div class="col-sm-7">
+                <img width="100%" height="400px" src="https://image.shutterstock.com/image-illustration/qualification-word-cloud-business-concept-600w-599294567.jpg" alt="">
+              </div>
+          </div>
+          <div class="row">
+            <div class="ScrollDown">
+  
+              <div class="ScrollDown_box">
+                <a class="btn_ScrollDown" href="#section_5">
+                  <span></span><span></span><span></span>Scroll Down</a>
+              </div>
+            
+            </div>
+          </div>
+          <div class="row" id="section_5" >
+            <h2 class="header" style="text-align: center;">ADDITIONAL INFORMATION</h2>
+            <p class="info" style="text-align: center;">For more information or questions regarding the Shrek-Juice franchising process, or to begin the application process, please contact
+                <a href= "mailto:ShrekJuices@example.com">ShrekJuices@example.com</a>
+            </p>
+          </div>
+          Scroll To Top <br><a href="#section_1" class="scroll_top"><i class="fa fa-angle-double-up"></i></a>
+        </div>
+        <script>
+          $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+        </script>
+        <footer class="site-footer">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Shrek -juice is a large juice system famous for its variety of juices.</p>
+              Call Us: <span class="glyphicon glyphicon-phone-alt"></span><a href="1800545455"> 1800 54 54 55    </a> <br>
+              Email Us: <span class="glyphicon glyphicon-envelope"></span><a href="mailto:shrek_juice@example.com"> shrek_juice@example.com   </span></a> <br>
+              <address> Adress: Pham Ngu Lao Street, District 1, Ho Chi Minh City, Viet Nam</address>
+              
+              </div>
+  
+              <div class="col-xs-6 col-md-3">
+              <h6>Menu</h6>
+              <ul class="footer-links">
+                  <li><a href="product.html#Fruit-Juice">Fruit Juice</a></li>
+                  <li><a href="product.html#Vegi-Juice" >Vegetable Juice</a></li>
+                  <li><a href="product.html#Smoothies" >Smoothies</a></li>
+                  <li><a href="product.html#Protein">Protein Shake</a></li>
+                  <li><a href="product.html#Winter" >Winter Menu</a></li>
+                  <li><a href="product.html#Choco-Juice" >Chocolate Juice</a></li>
+                  <li><a href="product.html#Mocktail" >Mocktail</a></li>
+              </ul>
+              </div>
+  
+              <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                  <li><a href="index5.html">Home</a></li>
+                  <li><a href="product.html" >Product</a></li>
+                  <li><a href="franchising.html" >Franchising</a></li>
+                  <li><a href="catering.html" >Catering</a></li>
+                  <li><a href="feedback.html" >Feedback</a></li>
+                  <li><a href="Aboutus.html" >About Us</a></li>
+                  <li><a href="contactus.html" >Contact Us</a></li>
+              </ul>
+              </div>
+          </div>
+          <hr>
+          </div>
+          <div class="container">
+          <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="#">Group No.4</a>.
+              </p>
+              </div>
+  
+              <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+              </div>
+          </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+
+</html>

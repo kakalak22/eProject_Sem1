@@ -1,0 +1,37 @@
+$(document).ready(function(){
+    $("#1").click(function(){
+      $("#Fruit-Juice").fadeToggle(1000);
+      $("#Fruit-Juice2").fadeToggle(1000);
+    });
+});
+$(document).ready(function(){
+    $("#2").click(function(){
+        $("#Vegi-Juice").fadeToggle(1500);
+    });
+});
+$(document).ready(function(){
+    $("#3").click(function(){
+      $("#Smoothies").fadeToggle(1500);
+    });
+});
+$(document).ready(function(){
+    $("#4").click(function(){
+      $("#Protein").fadeToggle(1500);
+      $("#Protein2").fadeToggle(1500);
+    });
+});
+$(document).ready(function(){
+    $("#5").click(function(){
+      $("#Winter").fadeToggle(1500);
+    });
+});
+$(document).ready(function(){
+    $("#6").click(function(){
+      $("#Choco-Juice").fadeToggle(1500);
+    });
+});
+$(document).ready(function(){
+    $("#7").click(function(){
+      $("#Mocktail").fadeToggle(1500);
+    });
+});

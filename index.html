@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 3</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style5.css">
+        <link rel="stylesheet" href="slidercard.css">
+        <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="a.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://use.fontawesome.com/f55e33691d.js"></script>
+    </head>
+    <body>
+      <div class="wrapper">
+        <nav>
+          <ul class="menu">
+            <a href="index5.html"><img src="../eProject/images/logo8.png" width="170px" alt="" class="logo"></a>
+            <li ><a  href="index5.html" class="active-content">Home</a></li>
+            <li><a href="product.html" >Product</a></li>
+            <li><a href="franchising.html" >Franchising</a></li>
+            <li><a href="catering.html" >Catering</a></li>
+            <li><a href="feedback.html" >Feedback</a></li>
+            <li><a href="Aboutus.html" >About Us</a></li>
+            <li><a href="contactus.html" >Contact Us</a></li>
+          </ul>
+        </nav>
+          <!-- Page Content Holder -->
+        <div id="content">
+          <div id="header-carousel" class="carousel slide" data-ride="header-carousel-ride">
+            <div class="carousel-inner">
+              <div class="item" style="background-image: url('../eProject/images/cover1.jpg');">
+                  <div class="title">100% Juice, 0% anything else
+                    <div class="text">We provide different types of Juices </div>
+                  </div>
+                  <a href="Product.html" class="more">Read More</a>
+              </div>
+              <div class="item" style="background-image: url('../eProject/images/cover2.jpg');">
+                <div class="title">About Us
+                  <div class="text">Shrek -juice is a large juice system famous for its variety of juices.</div>
+                </div>
+                <a href="aboutus.html" class="more">Read More</a>
+              </div>
+              <div class="item" style="background-image: url('../eProject/images/cover3.jpg');">
+                <div class="title">Franchising
+                  <div class="text">Start your own bussiness now with Shrek-Juice</div>
+                </div>
+                <a href="franchising.html" class="more">Read More</a>
+              </div>
+              
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#header-carousel" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left fa-3x"></i>
+            </a>
+            <a class="right carousel-control" href="#header-carousel" role="button" data-slide="next">
+              <i class="fa fa-chevron-right fa-3x"></i>
+            </a>
+          </div>
+          <script>
+            $(window).load(function(){
+            $('.title').css({ 'top': 90+'px', 'opacity': 1 });
+            $('.text').css({ 'opacity': 1 });
+            $('.more').css({ 'opacity': 1, 'bottom': 90+'px' });
+          });
+          $('#header-carousel').on('slid.bs.carousel', function () {
+            $('.title').css({ 'top': 90+'px', 'opacity': 1 });
+            $('.text').css({ 'opacity': 1 });
+            $('.more').css({ 'opacity': 1, 'bottom': 90+'px' });
+          });
+          $('#header-carousel').on('slide.bs.carousel', function () {
+            $('.title').css({ 'top': 0+'px', 'opacity': 0 });
+            $('.text').css({ 'opacity': 0 });
+            $('.more').css({ 'opacity': 0, 'bottom': 0+'px' });
+          });
+          function carouselFix() {
+            $(".carousel.slide").carousel("pause");
+            $('.carousel.slide .item').removeClass('active');
+            $('.carousel.slide').find('.item:first').addClass('active');
+          }
+          $(document).ready(function() {      
+            carouselFix();
+          });
+          </script>    
+          <!--End of main carousel-->
+          <script>
+            $(document).ready(function(){
+
+            $('#itemslider').carousel({ interval: 3000 });
+
+            $('.carousel-showmanymoveone .item').each(function(){
+            var itemToClone = $(this);
+
+            for (var i=1;i<6;i++) {
+            itemToClone = itemToClone.next();
+
+            if (!itemToClone.length) {
+            itemToClone = $(this).siblings(':first');
+            }
+
+            itemToClone.children(':first-child').clone()
+            .addClass("cloneditem-"+(i))
+            .appendTo($(this));
+            }
+            });
+            });
+
+          </script>
+          <div class="container">
+            <div class="row" id="slider-text">
+              <div class="col-md-6" >
+                <h2>NEW ARRIVAL</h2>
+              </div>
+            </div>
+            <div class="container "  id="Smoothies" style="margin: 1px 0px 1px 0px;">
+              <div class="grid-wrap">
+                <!--item 1-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/smoothie/blueberry-smoothie.jpg" alt="" />
+                    <figcaption>
+                      <p>If you're a big fan of the classic childhood sandwich.</p>
+                    </figcaption>
+                  <h4>Peach Blueberry Smoothie</h4>
+                  <h5>3$</h5>
+                  </figure>
+                </a>
+                <!--item 2-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/smoothie/03-green-tea-blueberry.jpg" alt="" />
+                    <figcaption>
+                      <p>This is the spinach smoothie for people who don't like spinach—but want to.</p>
+                    </figcaption>
+                  <h4>Green Tea, Blueberry, and Banana Smoothie</h4>
+                  <h5>3$</h5>
+                  </figure>
+                </a>
+                <!--item 3-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/smoothie/veryberry.jpg" alt="" />
+                    <figcaption>
+                      <p>Key Lime pie may taste great, but with ingredients like heavy cream</p>
+                    </figcaption>
+                    <h4>Very Berry Breakfast Smoothie</h4>
+                    <h5>2$</h5>
+                  </figure>
+                </a>
+                <!--item 4-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/smoothie/10-peachy-comp-1940322-1515514979.jpg" alt="" />
+                    <figcaption>
+                      <p>loaded with the goodness of nature and adding it to your summer diet can help in boosting your immunity.</p>>
+                    </figcaption>
+                    <h4>Just Peachy Smoothie</h4>
+                    <h5>3$</h5>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row" id="slider-text">
+              <div class="col-md-6" >
+                <h2>BEST SELLER</h2>
+              </div>
+            </div>
+            <div class="container " id="Protein2" style="margin: 1px 0px 1px 0px;">
+              <div class="grid-wrap">
+                <!--item 5-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/protein/sunrise-smoothie-blogger.jpg" alt="" />
+                    <figcaption>
+                      <p>You'll be whisked away on a mini mental-vacation the second you start sipping this tropical-tasting smoothie.</p>
+                    </figcaption>
+                    <h4>Sunrise Smoothie</h4>
+                    <h4>2$</h4>
+                  </figure>
+                </a>
+                <!--item 6-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/protein/dark-chocolate-peppermint-protein-smoothie-blogger.jpg" alt="" />
+                    <figcaption>
+                      <p>This minty sweet shake allows you to enjoy the taste of Chocolate.</p>
+                    </figcaption>
+                    <h4>Dark Chocolate Peppermint Shake</h4>
+                    <h4>3$</h4>
+                  </figure>
+                </a>
+                <!--item 7-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/protein/almond-butter-protein-smoothie-blogger.jpg" alt="" />
+                    <figcaption>
+                      <p>Made with just four ingredients, this smoothie will take you no time at all to whip up</p>
+                    </figcaption>
+                    <h4>Almond Butter Protein Smoothie</h4>
+                    <h4>2$</h4>
+                  </figure>
+                </a>
+                <!--item 8-->
+                <a class="list-block demo-1" href="#">
+                  <figure>
+                    <img src="../eProject/images/protein/grape-and-blueberry-protein-smoothie-blogger.jpg" alt="" />
+                    <figcaption>
+                      <p>If you're not big into the idea of using nutrition powders—or you've </p>
+                    </figcaption>
+                    <h4>Grape and Blueberry Protein Smoothie</h4>
+                    <h4>3$</h4>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+          
+        </div>
+        <!-- Site footer -->
+        <footer class="site-footer">
+          <div class="container">
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Shrek -juice is a large juice system famous for its variety of juices.</p>
+              Call Us: <span class="glyphicon glyphicon-phone-alt"></span><a href="1800545455"> 1800 54 54 55    </a> <br>
+              Email Us: <span class="glyphicon glyphicon-envelope"></span><a href="mailto:shrek_juice@example.com"> shrek_juice@example.com   </span></a> <br>
+              <address> Adress: Pham Ngu Lao Street, District 1, Ho Chi Minh City, Viet Nam</address>
+              
+              </div>
+  
+              <div class="col-xs-6 col-md-3">
+              <h6>Menu</h6>
+              <ul class="footer-links">
+                  <li><a href="product.html#Fruit-Juice">Fruit Juice</a></li>
+                  <li><a href="product.html#Vegi-Juice" >Vegetable Juice</a></li>
+                  <li><a href="product.html#Smoothies" >Smoothies</a></li>
+                  <li><a href="product.html#Protein">Protein Shake</a></li>
+                  <li><a href="product.html#Winter" >Winter Menu</a></li>
+                  <li><a href="product.html#Choco-Juice" >Chocolate Juice</a></li>
+                  <li><a href="product.html#Mocktail" >Mocktail</a></li>
+              </ul>
+              </div>
+  
+              <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                  <li><a href="index5.html">Home</a></li>
+                  <li><a href="product.html" >Product</a></li>
+                  <li><a href="franchising.html" >Franchising</a></li>
+                  <li><a href="catering.html" >Catering</a></li>
+                  <li><a href="feedback.html" >Feedback</a></li>
+                  <li><a href="Aboutus.html" >About Us</a></li>
+                  <li><a href="contactus.html" >Contact Us</a></li>
+              </ul>
+              </div>
+          </div>
+          <hr>
+          </div>
+          <div class="container">
+          <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+          <a href="#">Group No.4</a>.
+              </p>
+              </div>
+  
+              <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+              </div>
+          </div>
+          </div>
+        </footer>
+    </body>
+</html>
